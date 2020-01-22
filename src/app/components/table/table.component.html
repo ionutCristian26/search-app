@@ -1,0 +1,27 @@
+
+<div id="Modal" class="search-modal" *ngIf="data">
+  <div class="search-modal-header">
+    <h3>Search</h3>
+    <span id="close" (click)="hideTable()"><img  src="https://img.icons8.com/cotton/24/000000/cancel--v2.png"></span>
+  </div>
+  <div class="search-modal-body">
+    <table class="uk-table uk-table-hover">
+      <thead>
+      <tr>
+        <th>Name</th>
+        <th>Address</th>
+        <th>Phone</th>
+        <th>Website</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let item of data">
+        <td>{{ item._name }}</td>
+        <td>{{ item._address }}</td>
+        <td>{{ item._phone }}</td>
+        <td>{{ item._web }}</td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
