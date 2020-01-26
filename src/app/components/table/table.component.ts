@@ -15,14 +15,4 @@ export class TableComponent implements OnInit {
 
   ngOnInit() {
   }
-
-  hideTable() {
-   this.data = null;
-  }
-
-  copyInputMessage(inputElement) {
-    inputElement.select();
-    document.execCommand('copy');
-    inputElement.setSelectionRange(0, 0);
-  }
 }

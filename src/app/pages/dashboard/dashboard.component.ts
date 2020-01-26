@@ -36,7 +36,5 @@ export class DashboardComponent implements OnInit {
         this.showSpinner = false;
       });
     }
-
-    console.log('asd');
   }
 }

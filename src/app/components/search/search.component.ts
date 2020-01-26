@@ -17,12 +17,8 @@ export class SearchComponent implements OnInit {
   }
 
   search(value) {
-    let search: string;
-    if (value.includes('↵')) {
-      search = value.split('↵');
-    } else {
-      search = value.split(' ');
-    }
+    let search;
+    search = value.split('\n');
     if (search.length > 0) {
       this.searchEmitter.emit(search);
     }
