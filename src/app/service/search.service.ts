@@ -14,8 +14,4 @@ export class SearchService {
   mapSearch(value) {
     return this.http.get(this.mapUrl + `?_search=${ value }`);
   }
-
-  customSearch(value: any) {
-    return this.http.get(this.customUrl + `?_search=${ value }`);
-  }
 }

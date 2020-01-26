@@ -1,16 +1,22 @@
 .notification {
-  position: absolute;
+  //position: absolute;
   display: flex;
-  right: 50px;
-  top: 20px;
+  margin-right: 50px;
+  margin-top: 20px;
   color: #fff;
-  cursor: pointer;
+  padding: 15px;
+  height: 20px;
+
   & span {
     transition: transform .25s;
+    position: absolute;
+    right: 50px;
+    cursor: pointer;
   }
-  &:hover{
+
+  &:hover {
     & > span {
-      transform:scale(1.2);
+      transform: scale(1.2);
     }
   }
 }
@@ -22,6 +28,7 @@ li {
   //text-align: center;
   span {
     margin-right: 7px;
+
     &:hover {
       transform: scale(1.2);
     }

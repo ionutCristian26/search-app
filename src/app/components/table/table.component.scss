@@ -7,7 +7,7 @@
   max-width: 100%;
   background: white;
   border-radius: 10px;
-  position: absolute;
+  //position: absolute;
   left: 0;
   right: 0;
   margin: 0 auto;
@@ -28,7 +28,7 @@
     & span {
       & img{
         float: right;
-        position: absolute;
+        //position: flex;
         right: 16px;
         top: 25px;
         margin: 0 auto;

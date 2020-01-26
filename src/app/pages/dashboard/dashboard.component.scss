@@ -85,6 +85,7 @@ input {
   top: 160px;
   animation: slideInUp .5s;
   display: block;
+
   &-header{
     display: flex;
     padding: 10px;
@@ -196,4 +197,22 @@ input {
   top: 50%;
   left: 50%;
   color: #000;
+  font-weight: bold;
 }
+
+.card {
+  width: 375px;
+  display: block;
+  border-radius: 10px;
+}
+
+textarea {
+  width: 307px;
+  height: 158px;
+  min-height: 158px;
+}
+
+.table-container {
+  padding-top: 10vh !important;
+}
+

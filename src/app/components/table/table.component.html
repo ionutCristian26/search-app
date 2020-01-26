@@ -1,13 +1,14 @@
 
-<div id="Modal" class="search-modal" *ngIf="data">
+<div id="Modal" class="search-modal uk-child-width-expand@s uk-overflow-auto" >
   <div class="search-modal-header">
     <h3>Search</h3>
-    <span id="close" (click)="hideTable()"><img  src="https://img.icons8.com/cotton/24/000000/cancel--v2.png"></span>
+<!--    <span id="close" (click)="hideTable()"><img  src="https://img.icons8.com/cotton/24/000000/cancel&#45;&#45;v2.png"></span>-->
   </div>
   <div class="search-modal-body">
-    <table class="uk-table uk-table-hover">
+    <table class="uk-table uk-table-hover" *ngIf="data">
       <thead>
       <tr>
+        <th>Search</th>
         <th>Name</th>
         <th>Address</th>
         <th>Phone</th>
@@ -16,6 +17,7 @@
       </thead>
       <tbody>
       <tr *ngFor="let item of data">
+        <td>{{ item.search }}</td>
         <td>{{ item._name }}</td>
         <td>{{ item._address }}</td>
         <td>{{ item._phone }}</td>
@@ -23,5 +25,8 @@
       </tr>
       </tbody>
     </table>
+    <div *ngIf="!data">
+      No data searched
+    </div>
   </div>
 </div>

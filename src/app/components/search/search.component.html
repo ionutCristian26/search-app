@@ -1,13 +1,18 @@
-<div class="searchbox uk-animation-slide-top" >
-  <button class="btn-menu">
-    <img src="https://img.icons8.com/cute-clipart/24/000000/top-menu.png" (click)="changeMode()" *ngIf="searchMode === false">
-    <span uk-icon="icon: location" (click)="changeMode()" *ngIf="searchMode"></span>
-<!--    <div uk-dropdown="mode: click">-->
-<!--      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.-->
-<!--    </div>-->
-  </button>
-  <input id="search" type="text" placeholder="Search..." name="search" class="search" uk-tooltip="Search.." #searchInput>
-  <button  class="btn-search" (click)="search(searchInput.value)">
-    <img src="https://img.icons8.com/cotton/24/000000/search--v2.png">
-  </button>
+<!--<div class="searchbox uk-animation-slide-top" >-->
+<!--  <button class="btn-menu">-->
+<!--    <img src="https://img.icons8.com/cute-clipart/24/000000/top-menu.png" (click)="changeMode()" *ngIf="searchMode === false">-->
+<!--    <span uk-icon="icon: location" (click)="changeMode()" *ngIf="searchMode"></span>-->
+<!--&lt;!&ndash;    <div uk-dropdown="mode: click">&ndash;&gt;-->
+<!--&lt;!&ndash;      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.&ndash;&gt;-->
+<!--&lt;!&ndash;    </div>&ndash;&gt;-->
+<!--  </button>-->
+<!--  <input id="search" type="text" placeholder="Search..." name="search" class="search" uk-tooltip="Search.." #searchInput>-->
+<!--  <button  class="btn-search" (click)="search(searchInput.value)">-->
+<!--    <img src="https://img.icons8.com/cotton/24/000000/search&#45;&#45;v2.png">-->
+<!--  </button>-->
+<!--</div>-->
+<div class="uk-margin">
+  <textarea class="uk-textarea" rows="5" placeholder="Search.." uk-tooltip="Search.." #searchInput></textarea>
 </div>
+
+<button class="uk-button uk-button-primary searchButton" (click)="search(searchInput.value)">Search</button>

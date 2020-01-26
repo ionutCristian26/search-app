@@ -1,5 +1,4 @@
 import {Component, EventEmitter, OnInit, Output} from '@angular/core';
-import {fakeAsync} from "@angular/core/testing";
 
 @Component({
   selector: 'app-search',
@@ -11,22 +10,21 @@ export class SearchComponent implements OnInit {
 
   public searchMode = false;
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit() {
   }
 
   search(value) {
-    if (value.length > 0) {
-      const data = {
-        value,
-        searchMode: this.searchMode,
-      };
-      this.searchEmitter.emit(data);
+    let search: string;
+    if (value.includes('↵')) {
+      search = value.split('↵');
+    } else {
+      search = value.split(' ');
     }
-  }
-
-  changeMode() {
-    this.searchMode = !this.searchMode;
+    if (search.length > 0) {
+      this.searchEmitter.emit(search);
+    }
   }
 }
