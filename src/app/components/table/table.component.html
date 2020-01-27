@@ -8,7 +8,7 @@
     <table class="uk-table uk-table-hover" *ngIf="data">
       <thead>
       <tr>
-        <th>Search</th>
+        <th class="searchCol">Search</th>
         <th>Name</th>
         <th>Address</th>
         <th>Phone</th>
@@ -17,7 +17,7 @@
       </thead>
       <tbody>
       <tr *ngFor="let item of data">
-        <td>{{ item.search }}</td>
+        <td class="searchCol">{{ item.search }}</td>
         <td>{{ item._name }}</td>
         <td>{{ item._address }}</td>
         <td>{{ item._phone }}</td>
