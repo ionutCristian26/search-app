@@ -8,7 +8,7 @@ import { TableComponent } from './components/table/table.component';
 import { NotificationComponent } from './components/notification/notification.component';
 import {SearchService} from './service/search.service';
 import {HttpClientModule} from '@angular/common/http';
-import {AlertModule} from "ngx-alerts";
+import {AlertModule} from 'ngx-alerts';
 
 @NgModule({
   declarations: [

@@ -6,8 +6,7 @@ import {map} from 'rxjs/operators';
   providedIn: 'root'
 })
 export class SearchService {
-  private mapUrl = 'https://shipments-api.osc-fr1.scalingo.io/customSearch/maps';
-  private customUrl = 'https://shipments-api.osc-fr1.scalingo.io/customSearch';
+  private mapUrl = 'https://bdndev.com/~devbdn/customSearch/maps';
 
   constructor(private http: HttpClient) { }
 

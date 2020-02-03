@@ -30,7 +30,6 @@ export class DashboardComponent implements OnInit {
           this.data.push(item);
         })
         this.showSpinner = false;
-        console.log(res);
       }, err => {
         this.alertService.danger(err.message);
         this.showSpinner = false;

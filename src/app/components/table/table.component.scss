@@ -3,7 +3,7 @@
 
 .search-modal{
   height: 400px;
-  width: 800px;
+  //width: 800px;
   max-width: 100%;
   background: white;
   border-radius: 10px;
@@ -125,6 +125,12 @@
 
 .searchCol {
   background-color: #2F94D817;
+}
+
+.searchButton {
+  border-radius: 5px;
+  margin-left: 615px;
+  height: 40px;
 }
 
 
