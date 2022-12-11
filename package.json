@@ -27,7 +27,7 @@
     "boostrap": "^2.0.0",
     "bootstrap": "^4.4.1",
     "export-to-csv": "^0.2.1",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "ngx-alerts": "^4.0.0",
     "path": "^0.12.7",
     "rxjs": "~6.4.0",
